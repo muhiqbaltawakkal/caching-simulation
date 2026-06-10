@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Simulasi Caching</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚀 Simulasi Caching</h1>
+
+<p class="subtitle">
+
+Cache Strategy • Redis/Memcached • CDN
+• Cache Invalidation • Cache Eviction
+
+</p>
+
+<!-- Diagram -->
+
+<div class="diagram">
+
+<div class="step client">
+👤 CLIENT
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step cache">
+⚡ CACHE
+<br>
+(Redis / Memcached)
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step db">
+🗄 DATABASE
+</div>
+
+</div>
+
+<!-- Status -->
+
+<div class="grid">
+
+<div class="card">
+
+<h2>Status Cache</h2>
+
+<p id="cacheStatus">
+EMPTY
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Last Action</h2>
+
+<p id="lastAction">
+-
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Response Time</h2>
+
+<p id="responseTime">
+-
+</p>
+
+</div>
+
+</div>
+
+<!-- Flow -->
+
+<div class="card">
+
+<h2>🔄 Alur Cache Saat Ini</h2>
+
+<p id="flow">
+
+Belum ada aktivitas
+
+</p>
+
+</div>
+
+<!-- Product -->
+
+<div class="card">
+
+<h2>📦 Product Data</h2>
+
+<p id="productData">
+
+Belum ada data
+
+</p>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="buttons">
+
+<button onclick="cacheMiss()">
+Cache Miss
+</button>
+
+<button onclick="cacheHit()">
+Cache Hit
+</button>
+
+<button onclick="invalidateCache()">
+Invalidation
+</button>
+
+<button onclick="evictCache()">
+Eviction
+</button>
+
+</div>
+
+<!-- Log -->
+
+<div class="card">
+
+<h2>📋 Activity Log</h2>
+
+<ul id="logs"></ul>
+
+</div>
+
+<!-- CDN -->
+
+<div class="card">
+
+<h2>🌐 CDN Simulation</h2>
+
+<p>
+
+Browser menyimpan file:
+
+<ul>
+<li>index.html</li>
+<li>style.css</li>
+<li>app.js</li>
+</ul>
+
+Sehingga file tidak perlu diunduh
+ulang setiap kali halaman dibuka.
+
+Ini mensimulasikan konsep CDN
+dan Browser Cache.
+
+</p>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
