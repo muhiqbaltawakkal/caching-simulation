@@ -1,25 +1,26 @@
 # Simulasi Implementasi Caching
 
-Project simulasi:
+## Deskripsi
+Project ini merupakan simulasi implementasi konsep caching pada sistem web berbasis localhost menggunakan Node.js dan Express.
 
-- Cache Strategy
-- Redis/Memcached Concept
-- CDN Simulation
+## Fitur
+- Cache Miss
+- Cache Hit
 - Cache Invalidation
 - Cache Eviction
+- Simulasi Redis/Memcached
+- Simulasi CDN Browser Cache
 
-## Menjalankan Program
+## Teknologi
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
 
+## Cara Menjalankan
+
+Install dependency:
+
+```bash
 npm install
-
-node server.js
-
-Buka browser:
-
-http://localhost:3000
-
-## Dokumentasi
-
-Laporan lengkap tersedia pada file:
-
-Laporan Simulasi Implementasi Caching.pdf
